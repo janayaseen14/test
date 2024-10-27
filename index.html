@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Shelf Website</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@250;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+
+  <header>
+    <div class="container">
+
+      <nav class="navbar">
+        
+        <a href="#">
+          <img src="./assets/images/logo.jpg" alt=" BookShelf logo" width="250" class="logo-light">
+          <img src="./assets/images/logo.jpg" alt=" BookShelf logo" width="250" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Search</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">Add</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">My List</a>
+            </li>
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+        </div>
+
+
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1s">
+            Welcome to <b>Book Shelf</b>
+            your personal gateway to a world of stories, knowledge, and inspiration.
+          </h1>
+
+
+          <!--
+          <div class="btn-group">
+            <a href="#" class="btn btn-primary">Contact Me</a>
+            <a href="#" class="btn btn-secondary">About Me</a>
+          </div>
+        -->
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="./assets/images/photo1.png" alt="Book Reader" class="hero-img">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- book list -->
+    <div class="main">
+      <div class="container">
+      <h2 class="h2">Your Book list :</h2>
+    <div class="myList">
+            <div class="books">
+              <div class="oneBook">
+                <div class="oneBook-part1">
+                  <img
+                    src="./assets/images/photo2.jpg"
+                    width="250"
+                    class="oneBook-img"
+                  />
+                </div>
+
+                <div class="oneBook-part2">
+                  <button class="book-type text-tiny">skincare guide</button>
+                  <h3>
+                    <a href="#" class="h3">
+                      The Skin Nerd
+                    </a>
+                  </h3>
+                  <p class="book-author">
+                    Jennifer Rock
+                  </p>
+                </div>
+              </div>
+
+              <div class="oneBook">
+                <div class="oneBook-part1">
+                  <img
+                    src="./assets/images/photo3.jpg"
+                    width="250"
+                    class="oneBook-img"
+                  />
+                </div>
+
+                <div class="oneBook-part2">
+                  <button class="book-type text-tiny">Holocaust denial literature or conspiracy theory</button>
+                  <h3>
+                    <a href="" class="h3"
+                      >The Holocaust Dogma of Judaism: Keystone of the New World Order</a
+                    >
+                  </h3>
+                  <p class="book-author">
+                    Ben Weintraub
+                  </p>
+                </div>
+              </div>
+
+              <div class="oneBook">
+                <div class="oneBook-part1">
+                  <img
+                    src="./assets/images/photo4.jpg"
+                    width="250"
+                    class="oneBook-img"
+                  />
+                </div>
+
+                <div class="oneBook-part2">
+                  <button class="book-type text-tiny">anti-Semitic theological literature</button>
+                  <h3>
+                    <a href="" class="h3"
+                      >The Jews and Their Lies</a
+                    >
+                  </h3>
+                  <p class="book-author">
+                    Dr. Martin Luther 
+                  </p>
+                </div>
+              </div>
+
+              <div class="oneBook">
+                <div class="oneBook-part1">
+                  <img
+                    src="./assets/images/photo5.jpg"
+                    width="250"
+                    class="oneBook-img"
+                  />
+                </div>
+
+                <div class="oneBook-part2">
+                  <button class="book-type text-tiny">self-help or personal development</button>
+                  <h3>
+                    <a href="" class="h3"
+                      >Make It Happen: Manifest the Life of Your Dreams</a
+                    >
+                  </h3>
+                  <p class="book-author">
+                    Jordanna Levin
+                  </p>
+                </div>
+              </div>
+
+              <div class="oneBook">
+                <div class="oneBook-part1">
+                  <img
+                    src="./assets/images/photo6.jpg"
+                    width="250"
+                    class="oneBook-img"
+                  />
+                </div>
+
+                <div class="oneBook-part2">
+                  <button class="book-type text-tiny">
+                    Health & Nutrition
+                  </button>
+                  <h3>
+                    <a href="" class="h3">Eat Yourself Smart</a>
+                  </h3>
+                  <p class="book-author">Gill Paul</p>
+                </div>
+              </div>
+
+              <div class="oneBook">
+                <div class="oneBook-part1">
+                  <img
+                    src="./assets/images/photo7.jpg"
+                    width="250"
+                    class="oneBook-img"
+                  />
+                </div>
+
+                <div class="oneBook-part2">
+                  <button class="book-type text-tiny">
+                    Realistic children’s fiction
+                  </button>
+                  <h3>
+                    <a href="" class="h3">After the Worst Thing Happens</a>
+                  </h3>
+                  <p class="book-author">Audrey Vernick</p>
+                </div>
+              </div> 
+            </div>
+            <div class="right2">
+              
+            </div>
+    </div>
+   
+</div>
+</div>
+
+
+
+</body>
+
+</html>

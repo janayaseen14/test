@@ -1,0 +1,208 @@
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-content,
+  .add-book-section,
+  .book-list {
+    width: 90%;
+  }
+
+  .welcome-image {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .main-content h2,
+  .add-book-section h2,
+  .book-list h2 {
+    font-size: 1.2em;
+  }
+
+  .welcome-image {
+    max-width: 250px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+}
+
+nav a {
+  color: #666666;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+nav a:hover {
+  color: rgb(41, 97, 187);
+
+
+}
+
+.main-content {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.main-content b {
+  color: rgb(41, 97, 187);
+}
+
+
+
+.welcome-image {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0 0 280px 230px;
+  transform: translate(10px, -10px);
+
+}
+
+.main-content {
+  text-align: center;
+  margin: 20px;
+}
+
+.main-content h2 {
+  font-size: 1.5em;
+}
+
+.welcome-image {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  position: relative;
+}
+
+.add-book-section {
+  width: 40%;
+  margin-top: 20px;
+  text-align: left;
+  padding: 20px;
+  background-color: #ffffe6;
+  border-radius: 5px;
+}
+
+.add-book-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.add-book-section label {
+  display: block;
+  margin-top: 10px;
+}
+
+.add-book-section input {
+  width: 30%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #dbaa08;
+  border-radius: 4px;
+}
+
+.add-book-section button {
+  color: #fff;
+  padding: 15px 25px;
+  background-color: rgb(41, 97, 187);
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+
+}
+
+@media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+}
+
+.add-book-section button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+/* Book List */
+#bookListSection {
+  margin-top: 20px;
+  width: 80%;
+}
+
+#bookContainer {
+  list-style: none;
+  padding: 0;
+}
+
+#bookContainer li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+}
